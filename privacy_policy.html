@@ -3,212 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - UtiliMax (All in One Tools)</title>
+    <title>Privacy Policy - UtiliMax</title>
+    <meta name="description" content="Privacy Policy for UtiliMax - All in One Tools app. Learn how we protect your data and privacy.">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+        :root {
+            --bg-color: #0a0a1a;
+            --card-bg: rgba(255,255,255,0.04);
+            --text-primary: #f0f0f5;
+            --text-secondary: #a0a0b0;
+            --accent: #4f46e5;
+            --border: rgba(255,255,255,0.08);
         }
-        
+        * { margin:0; padding:0; box-sizing:border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.75;
+            background-image:
+                radial-gradient(circle at 15% 50%, rgba(79,70,229,0.12) 0%, transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(236,72,153,0.12) 0%, transparent 25%);
+            background-attachment: fixed;
         }
-        
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            min-height: 100vh;
+            padding: 60px 24px 80px;
         }
-        
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #3498db;
+        header {
+            text-align: center;
+            margin-bottom: 48px;
         }
-        
-        h2 {
-            color: #34495e;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        
-        h3 {
-            color: #34495e;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        
-        ul {
-            margin-left: 30px;
-            margin-bottom: 15px;
-        }
-        
-        li {
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
             margin-bottom: 8px;
         }
-        
-        .last-updated {
-            font-style: italic;
-            color: #7f8c8d;
-            margin-bottom: 30px;
+        header .subtitle {
+            font-size: 1rem;
+            color: var(--text-secondary);
         }
-        
-        .contact-info {
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
+        header .updated {
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-top: 6px;
         }
-
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 12px;
+            color: #c7d2fe;
+        }
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            color: #ddd6fe;
+        }
+        p, li {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li { margin-bottom: 6px; }
         .highlight-box {
-            background-color: #e8f5e8;
-            border: 1px solid #4caf50;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 15px 0;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 20px 0;
         }
-
-        .important-note {
-            background-color: #fff3cd;
-            border: 1px solid #ffc107;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 15px 0;
+        .highlight-box.privacy {
+            border-color: rgba(34,197,94,0.3);
+            background: rgba(34,197,94,0.05);
         }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-            
-            h1 {
-                font-size: 24px;
-            }
-            
-            h2 {
-                font-size: 20px;
-            }
+        .highlight-box.info {
+            border-color: rgba(79,70,229,0.3);
+            background: rgba(79,70,229,0.05);
+        }
+        strong { color: var(--text-primary); }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            font-size: 0.9rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+        th, td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        th {
+            color: var(--text-primary);
+            font-weight: 600;
+            background: var(--card-bg);
+        }
+        .divider {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 40px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+<div class="container">
+    <a href="index.html" class="back-link">&larr; Back to UtiliMax</a>
+
+    <header>
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: January 30, 2025</p>
-        
-        <div class="highlight-box">
-            <p><strong>Privacy-First Approach:</strong> UtiliMax is designed with your privacy in mind. We collect minimal data and store most information locally on your device. No personal information like email, name, or phone number is collected.</p>
-        </div>
-        
-        <p>Welcome to UtiliMax (All in One Tools). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the application.</p>
-        
-        <h2>1. Information We Collect</h2>
-        <p>We believe in minimal data collection. Here's exactly what our app does and doesn't collect:</p>
-        
-        <h3>What We DO Collect:</h3>
-        <ul>
-            <li><strong>Ad Interaction Data:</strong> When you interact with advertisements (clicks, impressions), this data is collected by Google AdMob for advertising purposes.</li>
-            <li><strong>App Preferences:</strong> Your app settings (theme preference, language, tool configurations) are stored locally on your device.</li>
-            <li><strong>Tool Usage History:</strong> QR codes you generate/scan and conversion history are stored locally on your device for your convenience.</li>
-            <li><strong>Device Capabilities:</strong> We check if your device has a camera and flash for the mirror and flashlight tools to function properly.</li>
-        </ul>
-        
-        <h3>What We DO NOT Collect:</h3>
-        <ul>
-            <li>Personal information (name, email, phone number)</li>
-            <li>Location data or GPS coordinates</li>
-            <li>Analytics or usage tracking data</li>
-            <li>Crash reports or performance data</li>
-            <li>Photos or images (camera is preview-only)</li>
-            <li>Audio recordings</li>
-            <li>Contact information</li>
-            <li>Device fingerprinting data</li>
-            <li>Browsing history or network activity</li>
-            <li>File system access beyond app data</li>
-        </ul>
+        <p class="subtitle">UtiliMax — All in One Tools</p>
+        <p class="updated">Last updated: February 7, 2026</p>
+    </header>
 
-        <div class="important-note">
-            <p><strong>Important:</strong> Firebase Analytics is explicitly disabled in our app. We do not track your app usage or collect analytics data.</p>
-        </div>
-        
-        <h2>2. How We Use Your Information</h2>
-        <p>The minimal data we collect is used solely for:</p>
-        <ul>
-            <li><strong>App Functionality:</strong> To provide the tools and features you expect (calculator, converters, QR tools, etc.)</li>
-            <li><strong>User Experience:</strong> To remember your preferences and settings locally</li>
-            <li><strong>Tool History:</strong> To provide convenient access to your recent QR codes and conversions</li>
-            <li><strong>Advertising:</strong> To display relevant ads through Google AdMob (in test mode)</li>
-        </ul>
-
-        <p><strong>We do NOT use your information for:</strong></p>
-        <ul>
-            <li>User profiling or tracking</li>
-            <li>Marketing communications</li>
-            <li>Data analysis or insights</li>
-            <li>Selling to third parties</li>
-        </ul>
-        
-        <h2>3. Data Storage and Security</h2>
-        <p><strong>Local Storage:</strong> All your personal data (preferences, history, settings) is stored locally on your device using secure local databases. This data never leaves your device unless you explicitly delete and reinstall the app.</p>
-        
-        <p><strong>Security:</strong> We implement appropriate security measures to protect your locally stored data. However, no method of transmission over the Internet or electronic storage is 100% secure.</p>
-        
-        <h2>4. Third-Party Services</h2>
-        <p>Our app uses the following third-party services with limited data sharing:</p>
-        
-        <h3>Google AdMob</h3>
-        <p>We use Google AdMob to display advertisements. Currently, our app is in test mode using test ad units. AdMob may collect advertising identifiers and interaction data according to Google's Privacy Policy. You can opt out of personalized ads in your device settings.</p>
-        
-        <h3>Firebase Remote Config</h3>
-        <p>We use Firebase Remote Config only for app configuration (like ad settings). No personal data is shared with Firebase, and Firebase Analytics is explicitly disabled.</p>
-
-        <h3>Camera Access</h3>
-        <p>The app requests camera permission for the Mirror tool and QR code scanner. The camera feed is only displayed in real-time and never stored, recorded, or transmitted.</p>
-        
-        <h2>5. Children's Privacy</h2>
-        <p>Our app is suitable for all ages and does not collect any personal information from anyone, including children under 13. Since we don't collect personal data, there are no special privacy concerns for children using this app.</p>
-        
-        <h2>6. Your Data Control</h2>
-        <p>Since most data is stored locally on your device, you have full control:</p>
-        <ul>
-            <li><strong>Clear App Data:</strong> You can clear all locally stored data through your device's app settings or our app's clear data feature.</li>
-            <li><strong>Uninstall:</strong> Uninstalling the app removes all locally stored data.</li>
-            <li><strong>No Account Deletion Needed:</strong> Since we don't store your data on our servers, there are no accounts to delete.</li>
-        </ul>
-        
-        <h2>7. Permissions Explained</h2>
-        <p>Our app requests these permissions for functionality only:</p>
-        <ul>
-            <li><strong>Camera:</strong> For Mirror tool and QR code scanning (no data stored or transmitted)</li>
-            <li><strong>Internet:</strong> For displaying ads and fetching app configuration</li>
-            <li><strong>Storage:</strong> For saving your preferences and tool history locally</li>
-        </ul>
-        
-        <h2>8. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated date. Since we collect minimal data, privacy policy changes are unlikely to significantly impact your privacy.</p>
-        
-        <h2>9. Contact Us</h2>
-        <div class="contact-info">
-            <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
-            <ul>
-                <li>App Store: UtiliMax (All in One Tools)</li>
-                <li>Package ID: com.toolsmax.allinone.utilities</li>
-            </ul>
-            <p><em>Note: Since we don't collect personal information, most privacy-related concerns are addressed by our local-first approach to data storage.</em></p>
-        </div>
+    <div class="highlight-box privacy">
+        <p><strong>🔒 Privacy-First Approach:</strong> UtiliMax is designed with your privacy in mind. We collect minimal data and store most information locally on your device. No personal information like email, name, or phone number is collected.</p>
     </div>
+
+    <p>Welcome to UtiliMax (All in One Tools). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the application.</p>
+
+    <!-- Section 1 -->
+    <h2>1. Information We Collect</h2>
+    <p>We believe in minimal data collection. Here's exactly what our app does and doesn't collect:</p>
+
+    <h3>What We DO Collect:</h3>
+    <ul>
+        <li><strong>Ad Interaction Data:</strong> When you interact with advertisements (clicks, impressions), this data is collected by Google AdMob for advertising purposes. <em>This does not apply to Premium subscribers, who see no ads.</em></li>
+        <li><strong>App Preferences:</strong> Your app settings (theme preference, language, tool configurations) are stored locally on your device.</li>
+        <li><strong>Tool Usage History:</strong> QR codes you generate/scan and conversion history are stored locally on your device for your convenience.</li>
+        <li><strong>Device Capabilities:</strong> We check if your device has a camera, flash, and microphone for app features to function properly.</li>
+        <li><strong>Subscription Status:</strong> Your subscription purchase status is managed and stored by Apple (App Store) or Google (Play Store). We store a local cache of your premium status on your device to enable offline access to premium features.</li>
+    </ul>
+
+    <h3>What We DO NOT Collect:</h3>
+    <ul>
+        <li>Personal information (name, email, phone number)</li>
+        <li>Location data or GPS coordinates</li>
+        <li>Analytics or usage tracking data</li>
+        <li>Crash reports or performance data</li>
+        <li>Photos or images (camera is preview-only)</li>
+        <li>Audio recordings (Speech-to-Text is processed in real-time and not stored)</li>
+        <li>Contact information</li>
+        <li>Device fingerprinting data</li>
+        <li>Browsing history or network activity</li>
+        <li>File system access beyond app data</li>
+        <li>Payment card information (all payments are processed by Apple or Google)</li>
+    </ul>
+
+    <div class="highlight-box info">
+        <p><strong>Important:</strong> Firebase Analytics is explicitly disabled in our app. We do not track your app usage or collect analytics data.</p>
+    </div>
+
+    <!-- Section 2 -->
+    <h2>2. How We Use Your Information</h2>
+    <p>The minimal data we collect is used solely for:</p>
+    <ul>
+        <li><strong>App Functionality:</strong> To provide the tools and features you expect (calculator, converters, QR tools, TTS, STT, etc.)</li>
+        <li><strong>User Experience:</strong> To remember your preferences and settings locally</li>
+        <li><strong>Tool History:</strong> To provide convenient access to your recent QR codes and conversions</li>
+        <li><strong>Advertising:</strong> To display relevant ads through Google AdMob (free version only)</li>
+        <li><strong>Subscription Management:</strong> To verify and maintain your premium subscription status for unlocking features and removing ads</li>
+    </ul>
+
+    <p>We do <strong>NOT</strong> use your information for:</p>
+    <ul>
+        <li>User profiling or tracking</li>
+        <li>Marketing communications</li>
+        <li>Data analysis or insights</li>
+        <li>Selling to third parties</li>
+    </ul>
+
+    <!-- Section 3 -->
+    <h2>3. Data Storage and Security</h2>
+    <p><strong>Local Storage:</strong> All your personal data (preferences, history, settings) is stored locally on your device using secure local databases. This data never leaves your device unless you explicitly delete and reinstall the app.</p>
+    <p><strong>Subscription Data:</strong> Your subscription purchase receipts and billing information are stored and managed entirely by Apple (App Store) or Google (Google Play). We do not have access to your payment methods, credit card numbers, or billing details.</p>
+    <p><strong>Security:</strong> We implement appropriate security measures to protect your locally stored data. However, no method of transmission over the Internet or electronic storage is 100% secure.</p>
+
+    <!-- Section 4 -->
+    <h2>4. Third-Party Services</h2>
+    <p>Our app uses the following third-party services with limited data sharing:</p>
+
+    <h3>Apple App Store / Google Play Store</h3>
+    <p>We use Apple's App Store and Google's Play Store for app distribution and in-app subscription payment processing. When you purchase a subscription, your payment is processed entirely by Apple or Google. We do not receive, store, or have access to your payment information. Please refer to:</p>
+    <ul>
+        <li><a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/privacy">Google's Privacy Policy</a></li>
+    </ul>
+
+    <h3>Google AdMob</h3>
+    <p>We use Google AdMob to display advertisements in the free version of the app. AdMob may collect advertising identifiers and interaction data according to Google's Privacy Policy. You can opt out of personalized ads in your device settings. <strong>Premium subscribers do not see ads and no ad-related data is collected for them.</strong></p>
+
+    <h3>Firebase Remote Config</h3>
+    <p>We use Firebase Remote Config only for app configuration (like ad settings). No personal data is shared with Firebase, and Firebase Analytics is explicitly disabled.</p>
+
+    <h3>Camera Access</h3>
+    <p>The app requests camera permission for the Mirror tool and QR code scanner. The camera feed is only displayed in real-time and never stored, recorded, or transmitted.</p>
+
+    <h3>Microphone Access</h3>
+    <p>The app requests microphone permission for the Speech-to-Text (Premium) feature. Audio is processed in real-time using your device's built-in speech recognition capabilities. Audio is <strong>not</strong> recorded, stored, or transmitted to our servers.</p>
+
+    <!-- Section 5 -->
+    <h2>5. Subscription-Related Data</h2>
+    <p>When you subscribe to UtiliMax Premium:</p>
+    <ul>
+        <li>Your payment is processed by <strong>Apple</strong> (for iOS) or <strong>Google</strong> (for Android). We never see or store your credit card or payment details.</li>
+        <li>We receive a confirmation from Apple/Google that you have an active subscription, which allows us to unlock premium features.</li>
+        <li>We store your subscription status (active/inactive), subscription type (monthly/yearly), and approximate expiry date <strong>locally on your device</strong> for offline access.</li>
+        <li>No subscription data is transmitted to our servers.</li>
+        <li>If you cancel your subscription, your premium status will revert at the end of your current billing period.</li>
+    </ul>
+
+    <!-- Section 6 -->
+    <h2>6. Children's Privacy</h2>
+    <p>Our app is suitable for all ages and does not knowingly collect any personal information from anyone, including children under 13 (or the applicable age of consent in your jurisdiction). Since we don't collect personal data, there are no special privacy concerns for children using this app. Subscription purchases require Apple ID or Google account authentication managed by the parent or guardian.</p>
+
+    <!-- Section 7 -->
+    <h2>7. Your Data Control</h2>
+    <p>Since most data is stored locally on your device, you have full control:</p>
+    <ul>
+        <li><strong>Clear App Data:</strong> You can clear all locally stored data through your device's app settings or our app's "Clear Data" feature.</li>
+        <li><strong>Uninstall:</strong> Uninstalling the app removes all locally stored data.</li>
+        <li><strong>No Account Deletion Needed:</strong> Since we don't store your data on our servers, there are no accounts to delete.</li>
+        <li><strong>Subscription Management:</strong> Manage or cancel subscriptions through your device's App Store or Google Play settings.</li>
+        <li><strong>Ad Preferences:</strong> Control personalized ads through your device's privacy settings.</li>
+    </ul>
+
+    <!-- Section 8 -->
+    <h2>8. Permissions Explained</h2>
+    <p>Our app requests these permissions for functionality only:</p>
+    <table>
+        <thead>
+            <tr><th>Permission</th><th>Purpose</th><th>Data Stored?</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Camera</td><td>Mirror tool and QR code scanning</td><td>No — preview only</td></tr>
+            <tr><td>Microphone</td><td>Speech-to-Text (Premium)</td><td>No — real-time only</td></tr>
+            <tr><td>Internet</td><td>Ads, config updates, subscription verification</td><td>No personal data sent</td></tr>
+            <tr><td>Storage</td><td>Saving preferences and tool history</td><td>Local only</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Section 9 -->
+    <h2>9. International Data Transfers</h2>
+    <p>Since UtiliMax stores data locally on your device and does not transmit personal data to our servers, there are no international data transfers of personal data by us. Third-party services (Google AdMob, Apple, Google) may transfer data internationally in accordance with their own privacy policies.</p>
+
+    <!-- Section 10 -->
+    <h2>10. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date. Since we collect minimal data, privacy policy changes are unlikely to significantly impact your privacy. We encourage you to review this Privacy Policy periodically.</p>
+
+    <!-- Section 11 -->
+    <h2>11. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
+    <ul>
+        <li><strong>App Name:</strong> UtiliMax (All in One Tools)</li>
+        <li><strong>Package ID:</strong> com.toolsmax.allinone.utilities</li>
+        <li><strong>Email:</strong> <a href="mailto:hrdeveloper8@gmail.com">hrdeveloper8@gmail.com</a></li>
+    </ul>
+
+    <div class="highlight-box info">
+        <p><strong>Note:</strong> Since we don't collect personal information, most privacy-related concerns are addressed by our local-first approach to data storage. All subscription billing and payment data is managed entirely by Apple and Google.</p>
+    </div>
+
+    <hr class="divider">
+
+    <p style="text-align:center; font-size:0.85rem; color:var(--text-secondary);">
+        By using UtiliMax, you acknowledge that you have read and understood this Privacy Policy.<br><br>
+        <a href="terms_and_conditions.html">Terms of Use (EULA)</a> &nbsp;·&nbsp; <a href="index.html">UtiliMax Home</a>
+    </p>
+</div>
 </body>
 </html>

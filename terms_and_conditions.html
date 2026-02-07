@@ -3,260 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions - UtiliMax (All in One Tools)</title>
+    <title>Terms of Use (EULA) - UtiliMax</title>
+    <meta name="description" content="Terms of Use and End User License Agreement for UtiliMax - All in One Tools app.">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+        :root {
+            --bg-color: #0a0a1a;
+            --card-bg: rgba(255,255,255,0.04);
+            --text-primary: #f0f0f5;
+            --text-secondary: #a0a0b0;
+            --accent: #4f46e5;
+            --border: rgba(255,255,255,0.08);
         }
-        
+        * { margin:0; padding:0; box-sizing:border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.75;
+            background-image:
+                radial-gradient(circle at 15% 50%, rgba(79,70,229,0.12) 0%, transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(236,72,153,0.12) 0%, transparent 25%);
+            background-attachment: fixed;
         }
-        
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            min-height: 100vh;
+            padding: 60px 24px 80px;
         }
-        
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #3498db;
+        header {
+            text-align: center;
+            margin-bottom: 48px;
         }
-        
-        h2 {
-            color: #34495e;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        
-        h3 {
-            color: #34495e;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        
-        ul, ol {
-            margin-left: 30px;
-            margin-bottom: 15px;
-        }
-        
-        li {
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
             margin-bottom: 8px;
         }
-        
-        .last-updated {
-            font-style: italic;
-            color: #7f8c8d;
-            margin-bottom: 30px;
+        header .subtitle {
+            font-size: 1rem;
+            color: var(--text-secondary);
         }
-        
-        .contact-info {
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
+        header .updated {
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-top: 6px;
         }
-        
-        .important-notice {
-            background-color: #e8f5e8;
-            border: 1px solid #4caf50;
-            padding: 15px;
-            border-radius: 5px;
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 12px;
+            color: #c7d2fe;
+        }
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            color: #ddd6fe;
+        }
+        p, li {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li { margin-bottom: 6px; }
+        .highlight-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
             margin: 20px 0;
         }
-        
-        .highlight-box {
-            background-color: #fff3cd;
-            border: 1px solid #ffc107;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 15px 0;
+        .highlight-box.important {
+            border-color: rgba(236,72,153,0.3);
+            background: rgba(236,72,153,0.05);
         }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-            
-            h1 {
-                font-size: 24px;
-            }
-            
-            h2 {
-                font-size: 20px;
-            }
-            
-            h3 {
-                font-size: 18px;
-            }
+        .highlight-box.info {
+            border-color: rgba(79,70,229,0.3);
+            background: rgba(79,70,229,0.05);
+        }
+        strong { color: var(--text-primary); }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            font-size: 0.9rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+        th, td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        th {
+            color: var(--text-primary);
+            font-weight: 600;
+            background: var(--card-bg);
+        }
+        .divider {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 40px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Terms and Conditions</h1>
-        <p class="last-updated">Last updated: January 30, 2025</p>
-        
-        <div class="important-notice">
-            <p><strong>Welcome to UtiliMax!</strong> These Terms and Conditions ("Terms") govern your use of the UtiliMax (All in One Tools) mobile application. By downloading and using our app, you agree to these terms.</p>
-        </div>
-        
-        <p>UtiliMax is a collection of utility tools including calculators, converters, QR code tools, measurement tools, and more. These Terms apply to all users of the application.</p>
-        
-        <h2>1. App Description and License</h2>
-        <p>UtiliMax provides various utility tools for personal and educational use, including:</p>
+<div class="container">
+    <a href="index.html" class="back-link">&larr; Back to UtiliMax</a>
+
+    <header>
+        <h1>Terms of Use (EULA)</h1>
+        <p class="subtitle">UtiliMax — All in One Tools</p>
+        <p class="updated">Last updated: February 7, 2026</p>
+    </header>
+
+    <p>Welcome to <strong>UtiliMax</strong> ("App", "we", "our", "us"). These Terms of Use constitute a legally binding End User License Agreement ("EULA") between you ("User", "you", "your") and UtiliMax. By downloading, installing, or using UtiliMax, you agree to be bound by these Terms. If you do not agree, please do not use the App.</p>
+
+    <p>This EULA governs your use of the UtiliMax mobile application available on the Apple App Store and Google Play Store, including any updates, supplements, and services made available through the App.</p>
+
+    <!-- Section 1 -->
+    <h2>1. App Description and License</h2>
+    <p>UtiliMax provides various utility tools for personal and educational use, including:</p>
+    <ul>
+        <li>Scientific and basic calculators</li>
+        <li>Unit converters (length, area, volume, weight, temperature)</li>
+        <li>Currency converter</li>
+        <li>QR code generator and scanner</li>
+        <li>Ruler and measurement tools</li>
+        <li>Flashlight and mirror tools</li>
+        <li>Tip calculator</li>
+        <li>Text-to-Speech (TTS) — <em>Premium</em></li>
+        <li>Speech-to-Text (STT) — <em>Premium</em></li>
+        <li>Document Tools (PDF/DOCX) — <em>Premium</em></li>
+        <li>Digital Signature — <em>Premium</em></li>
+    </ul>
+    <p>We grant you a personal, non-exclusive, non-transferable, revocable license to use UtiliMax for lawful purposes in accordance with these Terms.</p>
+
+    <!-- Section 2 - SUBSCRIPTIONS -->
+    <h2>2. Premium Subscriptions and In-App Purchases</h2>
+    <p>UtiliMax offers optional auto-renewable subscription plans that unlock premium features and remove advertisements.</p>
+
+    <h3>2.1 Subscription Plans</h3>
+    <table>
+        <thead>
+            <tr><th>Plan</th><th>Duration</th><th>Price (USD)</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Premium Monthly</td><td>1 Month</td><td>$2.99</td></tr>
+            <tr><td>Premium Yearly</td><td>1 Year</td><td>$19.99</td></tr>
+        </tbody>
+    </table>
+    <p>Prices may vary by region and are displayed in your local currency at the time of purchase. Prices are subject to change. Any price change will take effect at the start of the next subscription period following the date of the price change.</p>
+
+    <h3>2.2 What Premium Includes</h3>
+    <p>Both subscription plans provide access to all premium features:</p>
+    <ul>
+        <li><strong>Text-to-Speech (TTS)</strong> — Convert text to natural-sounding speech</li>
+        <li><strong>Speech-to-Text (STT)</strong> — Transcribe speech to text instantly</li>
+        <li><strong>Document Tools</strong> — Convert and merge PDF/DOCX files</li>
+        <li><strong>Digital Signature</strong> — Sign documents digitally</li>
+        <li><strong>Ad-Free Experience</strong> — Complete removal of all advertisements</li>
+    </ul>
+
+    <h3>2.3 Auto-Renewal</h3>
+    <div class="highlight-box important">
+        <p><strong>⚠️ Important — Auto-Renewal Terms:</strong></p>
         <ul>
-            <li>Scientific and basic calculators</li>
-            <li>Unit converters (length, area, volume, weight, temperature)</li>
-            <li>Currency converter</li>
-            <li>QR code generator and scanner</li>
-            <li>Ruler and measurement tools</li>
-            <li>Flashlight and mirror tools</li>
-            <li>Tip calculator</li>
+            <li>Payment will be charged to your <strong>Apple ID account</strong> (iOS) or <strong>Google Play account</strong> (Android) at confirmation of purchase.</li>
+            <li>Subscriptions <strong>automatically renew</strong> unless auto-renew is turned off at least <strong>24 hours before the end of the current billing period</strong>.</li>
+            <li>Your account will be charged for renewal within <strong>24 hours prior to the end of the current period</strong> at the same price.</li>
+            <li>No cancellation of the current subscription is allowed during the active subscription period.</li>
         </ul>
-        <p>We grant you a personal, non-exclusive, non-transferable license to use UtiliMax for lawful purposes in accordance with these Terms.</p>
-        
-        <h2>2. Privacy and Data Collection</h2>
-        <p>UtiliMax is designed with privacy in mind:</p>
-        <ul>
-            <li><strong>No Personal Data:</strong> We do not collect names, emails, phone numbers, or personal information</li>
-            <li><strong>Local Storage:</strong> Your preferences and tool history are stored locally on your device</li>
-            <li><strong>Limited Third-Party Data:</strong> Only Google AdMob collects advertising interaction data</li>
-            <li><strong>No Analytics:</strong> Firebase Analytics is explicitly disabled</li>
-        </ul>
-        <p>For complete details, please review our Privacy Policy.</p>
-        
-        <h2>3. Acceptable Use</h2>
-        <p>You agree to use UtiliMax only for lawful purposes. You may not:</p>
-        <ul>
-            <li>Use the app for any illegal activities</li>
-            <li>Attempt to reverse engineer, decompile, or hack the application</li>
-            <li>Use the app to generate QR codes containing malicious content</li>
-            <li>Redistribute or sell the application</li>
-            <li>Use the app in any way that could harm our services or other users</li>
-        </ul>
-        
-        <h2>4. Tool Accuracy and Disclaimers</h2>
-        
-        <div class="highlight-box">
-            <p><strong>Important Disclaimer:</strong> UtiliMax tools are provided for convenience and informational purposes. Always verify critical calculations and measurements with professional tools.</p>
-        </div>
-        
-        <h3>4.1 Calculator Tools</h3>
-        <p>Our calculators are designed for general use. For critical financial, engineering, or scientific calculations, please verify results with professional tools.</p>
-        
-        <h3>4.2 Conversion Tools</h3>
-        <p>Unit conversions use standard conversion factors. Currency conversion rates may not be real-time and should not be used for actual financial transactions without verification.</p>
-        
-        <h3>4.3 Measurement Tools</h3>
-        <p>The digital ruler requires calibration and may not be as accurate as physical measurement tools. Use for approximate measurements only.</p>
-        
-        <h3>4.4 QR Code Tools</h3>
-        <p>QR codes generated are standard format. We are not responsible for how third-party applications interpret the codes. Be cautious when scanning unknown QR codes.</p>
-        
-        <h2>5. Camera and Device Permissions</h2>
-        <p>UtiliMax requests device permissions only for functionality:</p>
-        <ul>
-            <li><strong>Camera:</strong> Used for QR code scanning and mirror tool (no data stored or transmitted)</li>
-            <li><strong>Storage:</strong> Used to save your preferences and tool history locally</li>
-            <li><strong>Internet:</strong> Used for displaying ads and app configuration updates</li>
-        </ul>
-        <p>You can revoke these permissions in your device settings, though some features may not work without them.</p>
-        
-        <h2>6. Advertisements</h2>
-        <p>UtiliMax displays advertisements to support the free app:</p>
-        <ul>
-            <li>Ads are provided by Google AdMob</li>
-            <li>Currently using test ads during development</li>
-            <li>You can opt out of personalized ads in your device settings</li>
-            <li>We do not control the content of third-party advertisements</li>
-        </ul>
-        
-        <h2>7. Intellectual Property</h2>
-        <p>UtiliMax and its original content are protected by copyright and other intellectual property laws. The UtiliMax name, design, and functionality remain our exclusive property.</p>
-        
-        <h2>8. Third-Party Services</h2>
-        <p>Our app integrates with limited third-party services:</p>
-        <ul>
-            <li><strong>Google AdMob:</strong> For advertisements</li>
-            <li><strong>Firebase Remote Config:</strong> For app configuration</li>
-        </ul>
-        <p>These services have their own terms of service and privacy policies.</p>
-        
-        <h2>9. Limitation of Liability</h2>
-        <p>UtiliMax is provided "as is" without warranties. We are not liable for:</p>
-        <ul>
-            <li>Calculation errors or inaccuracies</li>
-            <li>Decisions made based on app results</li>
-            <li>Data loss from device issues</li>
-            <li>Third-party service interruptions</li>
-            <li>Any damages arising from app use</li>
-        </ul>
-        
-        <h2>10. App Updates and Changes</h2>
-        <p>We may update UtiliMax to:</p>
-        <ul>
-            <li>Add new tools and features</li>
-            <li>Improve existing functionality</li>
-            <li>Fix bugs and security issues</li>
-            <li>Update design and user interface</li>
-        </ul>
-        <p>Updates are provided through your device's app store. Some updates may require accepting revised terms.</p>
-        
-        <h2>11. Account and Data Management</h2>
-        <p>Since UtiliMax doesn't require accounts:</p>
-        <ul>
-            <li>No registration or login needed</li>
-            <li>All data stored locally on your device</li>
-            <li>Uninstalling the app removes all data</li>
-            <li>No server-side data to delete or manage</li>
-        </ul>
-        
-        <h2>12. Geographic Restrictions</h2>
-        <p>UtiliMax is intended for worldwide use. However, some features (like currency conversion) may not be available in all regions due to technical or legal restrictions.</p>
-        
-        <h2>13. Children's Use</h2>
-        <p>UtiliMax is suitable for all ages. Since we don't collect personal information, there are no special restrictions for children's use. Parents should supervise children's use of any mobile application.</p>
-        
-        <h2>14. Termination</h2>
-        <p>You may stop using UtiliMax at any time by uninstalling the app. We may discontinue the app or specific features with reasonable notice when possible.</p>
-        
-        <h2>15. Changes to Terms</h2>
-        <p>We may update these Terms occasionally. Significant changes will be communicated through app updates or notifications. Continued use after changes indicates acceptance of new terms.</p>
-        
-        <h2>16. Governing Law</h2>
-        <p>These Terms are governed by applicable laws. Any disputes will be resolved through appropriate legal channels in the jurisdiction where the app is used.</p>
-        
-        <h2>17. Contact Information</h2>
-        <div class="contact-info">
-            <p>For questions about these Terms and Conditions or the UtiliMax app:</p>
-            <ul>
-                <li><strong>App Name:</strong> UtiliMax (All in One Tools)</li>
-                <li><strong>Package ID:</strong> com.toolsmax.allinone.utilities</li>
-                <li><strong>Support:</strong> Through your device's app store review system</li>
-            </ul>
-            <br>
-            <p><strong>Open Source Acknowledgments:</strong></p>
-            <p>UtiliMax uses various open-source libraries and frameworks. We acknowledge and thank the developers of Flutter, Dart, and other open-source projects that make this app possible.</p>
-            
-            <p><em>By using UtiliMax, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</em></p>
-        </div>
     </div>
+
+    <h3>2.4 Managing and Cancelling Subscriptions</h3>
+    <p>You can manage or cancel your subscription at any time:</p>
+    <ul>
+        <li><strong>iOS:</strong> Go to <em>Settings → [Your Name] → Subscriptions</em> on your device, or visit <a href="https://apps.apple.com/account/subscriptions">Apple Subscription Management</a>.</li>
+        <li><strong>Android:</strong> Go to <em>Google Play Store → Menu → Subscriptions</em>, or visit <a href="https://play.google.com/store/account/subscriptions">Google Play Subscription Management</a>.</li>
+    </ul>
+    <p>Cancellation takes effect at the end of the current billing period. You will retain access to premium features until the end of the period you have already paid for. Uninstalling the app does <strong>not</strong> cancel your subscription.</p>
+
+    <h3>2.5 Free Trial</h3>
+    <p>If a free trial is offered, the unused portion of the free trial period will be forfeited when you purchase a subscription. Free trial eligibility is determined by Apple or Google and may be limited to one trial per Apple ID or Google account.</p>
+
+    <h3>2.6 Refunds</h3>
+    <p>Refund requests are handled by the respective platform:</p>
+    <ul>
+        <li><strong>iOS:</strong> Request a refund through <a href="https://reportaproblem.apple.com">Apple's Report a Problem</a> page.</li>
+        <li><strong>Android:</strong> Request a refund through <a href="https://support.google.com/googleplay/answer/2479637">Google Play's Refund Policy</a> page.</li>
+    </ul>
+    <p>We do not process payments or refunds directly. All billing is managed by Apple or Google.</p>
+
+    <h3>2.7 Restore Purchases</h3>
+    <p>If you reinstall the app or switch devices, you can restore your active subscription by tapping "Restore Purchases" in the app. Ensure you are signed in with the same Apple ID or Google account used for the original purchase.</p>
+
+    <!-- Section 3 -->
+    <h2>3. Privacy and Data Collection</h2>
+    <p>UtiliMax is designed with privacy in mind:</p>
+    <ul>
+        <li><strong>No Personal Data:</strong> We do not collect names, emails, phone numbers, or personal information.</li>
+        <li><strong>Local Storage:</strong> Your preferences and tool history are stored locally on your device.</li>
+        <li><strong>Third-Party Data:</strong> Google AdMob collects advertising interaction data (free version only). Apple and Google process subscription payment data according to their respective privacy policies.</li>
+        <li><strong>No Analytics:</strong> Firebase Analytics is explicitly disabled.</li>
+    </ul>
+    <p>For complete details, please review our <a href="privacy_policy.html">Privacy Policy</a>.</p>
+
+    <!-- Section 4 -->
+    <h2>4. Acceptable Use</h2>
+    <p>You agree to use UtiliMax only for lawful purposes. You may not:</p>
+    <ul>
+        <li>Use the app for any illegal activities</li>
+        <li>Attempt to reverse engineer, decompile, or hack the application</li>
+        <li>Circumvent, disable, or interfere with the subscription or payment mechanisms</li>
+        <li>Use the app to generate QR codes containing malicious content</li>
+        <li>Redistribute or sell the application</li>
+        <li>Share your subscription access with others</li>
+        <li>Use the app in any way that could harm our services or other users</li>
+    </ul>
+
+    <!-- Section 5 -->
+    <h2>5. Tool Accuracy and Disclaimers</h2>
+    <div class="highlight-box info">
+        <p><strong>Important Disclaimer:</strong> UtiliMax tools are provided for convenience and informational purposes. Always verify critical calculations and measurements with professional tools.</p>
+    </div>
+
+    <h3>5.1 Calculator Tools</h3>
+    <p>Our calculators are designed for general use. For critical financial, engineering, or scientific calculations, please verify results with professional tools.</p>
+
+    <h3>5.2 Conversion Tools</h3>
+    <p>Unit conversions use standard conversion factors. Currency conversion rates may not be real-time and should not be used for actual financial transactions without verification.</p>
+
+    <h3>5.3 Measurement Tools</h3>
+    <p>The digital ruler requires calibration and may not be as accurate as physical measurement tools. Use for approximate measurements only.</p>
+
+    <h3>5.4 QR Code Tools</h3>
+    <p>QR codes generated are standard format. We are not responsible for how third-party applications interpret the codes. Be cautious when scanning unknown QR codes.</p>
+
+    <h3>5.5 Premium Tools (TTS, STT, Document Tools, Digital Signature)</h3>
+    <p>Premium tools are provided as-is. Text-to-Speech and Speech-to-Text results may vary depending on language, accent, and device capabilities. Document conversion results should be reviewed for accuracy. Digital signatures created with this app may not have legal validity in all jurisdictions.</p>
+
+    <!-- Section 6 -->
+    <h2>6. Camera and Device Permissions</h2>
+    <p>UtiliMax requests device permissions only for functionality:</p>
+    <ul>
+        <li><strong>Camera:</strong> Used for QR code scanning and mirror tool (no data stored or transmitted)</li>
+        <li><strong>Microphone:</strong> Used for Speech-to-Text feature (Premium — audio is processed locally or via platform services, not stored)</li>
+        <li><strong>Storage:</strong> Used to save your preferences and tool history locally</li>
+        <li><strong>Internet:</strong> Used for displaying ads, app configuration updates, and subscription verification</li>
+    </ul>
+    <p>You can revoke these permissions in your device settings, though some features may not work without them.</p>
+
+    <!-- Section 7 -->
+    <h2>7. Advertisements</h2>
+    <p>The free version of UtiliMax displays advertisements to support the app:</p>
+    <ul>
+        <li>Ads are provided by Google AdMob</li>
+        <li>You can opt out of personalized ads in your device settings</li>
+        <li>We do not control the content of third-party advertisements</li>
+        <li><strong>Premium subscribers enjoy a completely ad-free experience</strong></li>
+    </ul>
+
+    <!-- Section 8 -->
+    <h2>8. Intellectual Property</h2>
+    <p>UtiliMax and its original content, features, and functionality are protected by copyright and other intellectual property laws. The UtiliMax name, logo, design, and functionality remain our exclusive property. Your subscription grants you a license to use the App, not ownership of any content or intellectual property.</p>
+
+    <!-- Section 9 -->
+    <h2>9. Third-Party Services</h2>
+    <p>Our app integrates with the following third-party services:</p>
+    <ul>
+        <li><strong>Apple App Store / Google Play Store:</strong> For app distribution and subscription payment processing</li>
+        <li><strong>Google AdMob:</strong> For advertisements (free version only)</li>
+        <li><strong>Firebase Remote Config:</strong> For app configuration</li>
+    </ul>
+    <p>These services have their own terms of service and privacy policies. We encourage you to review them.</p>
+
+    <!-- Section 10 -->
+    <h2>10. Limitation of Liability</h2>
+    <p>UtiliMax is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, either express or implied. To the maximum extent permitted by applicable law, we shall not be liable for:</p>
+    <ul>
+        <li>Calculation errors or inaccuracies</li>
+        <li>Decisions made based on app results</li>
+        <li>Data loss from device issues</li>
+        <li>Third-party service interruptions</li>
+        <li>Subscription billing issues managed by Apple or Google</li>
+        <li>Any indirect, incidental, special, or consequential damages arising from app use</li>
+    </ul>
+
+    <!-- Section 11 -->
+    <h2>11. App Updates and Changes</h2>
+    <p>We may update UtiliMax to add new tools and features, improve existing functionality, fix bugs, and update the design. Updates are provided through your device's app store. We reserve the right to modify, suspend, or discontinue premium features with reasonable notice.</p>
+
+    <!-- Section 12 -->
+    <h2>12. Account and Data Management</h2>
+    <p>UtiliMax does not require account registration. All data is stored locally on your device. Uninstalling the app removes all locally stored data. Subscription status is managed by Apple or Google and persists regardless of app installation.</p>
+
+    <!-- Section 13 -->
+    <h2>13. Children's Use</h2>
+    <p>UtiliMax is suitable for all ages. Since we don't collect personal information, there are no special restrictions for children's use. Parents and guardians should supervise children's use of any mobile application, especially any in-app purchase features. Subscription purchases require Apple ID or Google account authentication.</p>
+
+    <!-- Section 14 -->
+    <h2>14. Termination</h2>
+    <p>You may stop using UtiliMax at any time by uninstalling the app. Remember to cancel any active subscriptions separately through your device's app store settings. We may terminate or suspend your access to the App if you violate these Terms.</p>
+
+    <!-- Section 15 -->
+    <h2>15. Changes to Terms</h2>
+    <p>We may update these Terms from time to time. We will notify you of material changes by updating the "Last updated" date. Continued use of the App after any changes constitutes acceptance of the revised Terms. For subscription-related changes, we will provide notice in accordance with Apple and Google's requirements.</p>
+
+    <!-- Section 16 -->
+    <h2>16. Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with applicable laws. Any disputes arising from these Terms or your use of the App will be resolved through appropriate legal channels in the jurisdiction where the app is used.</p>
+
+    <!-- Section 17 -->
+    <h2>17. Apple-Specific Terms</h2>
+    <p>If you are using UtiliMax on an Apple device, the following additional terms apply:</p>
+    <ul>
+        <li>This EULA is between you and UtiliMax only, and not with Apple Inc. ("Apple").</li>
+        <li>Apple has no obligation to furnish any maintenance or support services with respect to the App.</li>
+        <li>In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any) for the App. Apple has no other warranty obligation with respect to the App.</li>
+        <li>Apple is not responsible for addressing any claims relating to the App or your use of the App.</li>
+        <li>Apple is a third-party beneficiary of this EULA and may enforce it against you.</li>
+        <li>You must comply with applicable third-party terms of agreement when using the App (e.g., your wireless data service agreement).</li>
+    </ul>
+
+    <!-- Section 18 -->
+    <h2>18. Contact Information</h2>
+    <p>For questions about these Terms of Use or the UtiliMax app:</p>
+    <ul>
+        <li><strong>App Name:</strong> UtiliMax (All in One Tools)</li>
+        <li><strong>Package ID:</strong> com.toolsmax.allinone.utilities</li>
+        <li><strong>Email:</strong> <a href="mailto:hrdeveloper8@gmail.com">hrdeveloper8@gmail.com</a></li>
+    </ul>
+
+    <hr class="divider">
+
+    <p style="text-align:center; font-size:0.85rem; color:var(--text-secondary);">
+        By using UtiliMax, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.<br><br>
+        <a href="privacy_policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="index.html">UtiliMax Home</a>
+    </p>
+</div>
 </body>
 </html>
